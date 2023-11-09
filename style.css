@@ -1,0 +1,14 @@
+body{
+    background-color: #343d4b;
+}
+.container {
+    width: 944px;
+    height: 623px;
+    flex-shrink: 0;
+    border-radius: 33px;
+    background: black;
+    position: relative; 
+        top: 34px;
+        left: 82px;
+
+}        
