@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -11,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Montserrat, sans-serif;
 }
 
 .container{
@@ -28,17 +30,14 @@ body{
     display: flex;
     border-radius: 25px;
     justify-content: center;
-    background: url("1.jpg");
+    /* background: url("./images/1.png"), lightgray 50% / cover no-repeat, linear-gradient(152deg, rgba(136, 235, 239, 0.90) -0.04%, rgba(83, 91, 230, 0.90) 100%); */
+    background: url("./images/1.png");
     background-position: center;
     background-size: cover;
     transform: scale(1.03) perspective(200px);
     cursor: pointer;
     box-shadow: 0 0 20px -10px rrgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-}
-
-.left-info:hover{
-    transform: scale(1.1) perspective(2500px) rotateY(5deg);
 }
 
 .pic-gradient{
@@ -53,7 +52,8 @@ body{
 }
 
 .today-info{
-    position: absolute;
+    position: relative;
+    right: 60px;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -74,7 +74,7 @@ body{
 
 .weather-temp{
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2.0rem;
 }
 
 .right-info{
@@ -126,12 +126,6 @@ body{
     font-size: 2rem;
 }
 
-.days-list li:hover{
-    transform: scale(1.1);
-    background: #fff;
-    color: #222831;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-}
 
 .days-list li .day-temp{
     margin-top: 6px;
@@ -154,8 +148,4 @@ body{
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease;
-}
-
-.loc-button:hover{
-    background: #1a237e;
 }
