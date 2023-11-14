@@ -20,7 +20,7 @@ body{
     background-color: #232931;
     color: #fff;
     border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    
 }
 
 .left-info{
@@ -36,7 +36,6 @@ body{
     background-size: cover;
     transform: scale(1.03) perspective(200px);
     cursor: pointer;
-    box-shadow: 0 0 20px -10px rrgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -46,7 +45,6 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, #5c6bc0 10%, #0d47a1 100%);
     border-radius: 25px;
     opacity: 0.5;
 }
@@ -106,8 +104,8 @@ body{
     display: flex;
     list-style: none;
     margin: 10px 35px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
+    background: #272E37;
 }
 
 .days-list li{
