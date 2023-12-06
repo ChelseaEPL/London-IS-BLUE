@@ -1,0 +1,42 @@
+.container{
+    height: 400px;
+    background-color: #232931;
+    color: #fff;
+    border-radius: 25px;
+    display: flex;
+    
+}
+@media (max-width:700px) {
+    .container{ 
+        flex-direction: column;
+        height: 135vh;
+        
+    }
+}
+.container__left-information{
+    width: 260px;
+    height: 100%;
+    float: left;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    /* background: url("./images/1.png"), lightgray 50% / cover no-repeat, linear-gradient(152deg, rgba(136, 235, 239, 0.90) -0.04%, rgba(83, 91, 230, 0.90) 100%); */
+    background: url("../images/1.png");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03) perspective(200px);
+    transition: all 0.3s ease;
+}
+@media (max-width:700px) {
+    .container__left-information{ 
+        width: 100%;
+    }
+}
+
+.container__right-information{
+    float: right;
+    position: relative;
+    height: 100%;
+    padding-top: 25px;
+}
+

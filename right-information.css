@@ -1,0 +1,56 @@
+.right-information__day{
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-information__day div:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.right-information__day div .day__title{
+    font-weight: 700;
+}
+
+.right-information__day div .day__value{
+    float: right;
+}
+
+.right-information__list{
+    display: flex;
+    gap: 1px;
+    list-style: none;
+    margin: 10px 35px;
+}
+
+.right-information__list li{
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #272E37;
+    transition: all 0.3s ease;
+}
+
+.right-information__list li.list__active {
+    background-color: white;
+    color: black;
+}
+
+.right-information__list li .bx{
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+
+.right-information__list li .active-temperature{
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+.right-information__btn{
+    padding: 25px 35px;
+}
